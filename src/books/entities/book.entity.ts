@@ -1,15 +1,14 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-
 @Entity()
 export class Book {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  firstName: string;
+  bookName: string;
 
   @Column()
-  lastName: string;
+  price: string;
 
   @Column({ default: true })
   isActive: boolean;
